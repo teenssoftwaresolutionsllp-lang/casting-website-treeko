@@ -316,7 +316,7 @@ export default async function AboutPage() {
             },
             {
               name: "Darapureddy.Sriramulu",
-              role: "Managing Director & IT |  Co-Founder",
+              role: "IT |  Co-Founder",
               image: "/images/board/director-7.jpg",
               objectPosition: "center 14%",
               scaleClass: "scale-100",

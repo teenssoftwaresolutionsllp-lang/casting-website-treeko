@@ -35,7 +35,38 @@ The easiest way to deploy your Next.js app is to use the [Vercel Platform](https
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
 
+### Windows deployment commands
 
+Run the following commands from the project folder you want to deploy:
+
+```powershell
+cd "D:\Balaji Marpally\admin-teens"
+
+npm install
+npm install -g vercel
+
+npx vercel whoami
+npx vercel link --project admin-teens --scope prolicious-team
+npx vercel --prod --scope prolicious-team
+```
+
+### Important notes
+
+- Do not run `vercel whoami` directly on Windows when `vercel` is not available on the PATH. Use `npx vercel whoami` instead.
+- If the CLI is not logged in, run:
+
+```powershell
+npx vercel login
+```
+
+- Then continue with:
+
+```powershell
+npx vercel link --project admin-teens --scope prolicious-team
+npx vercel --prod --scope prolicious-team
+```
+
+- If you are deploying from a different folder, replace the `cd` path with your project directory before running the commands.
 
 ## Environment Variables
 
